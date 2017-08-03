@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.monkey.testshareuseridone.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHAREUSERID ONE"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开第二个app的Activity" />
+        <Button
+            android:id="@+id/btn_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取私有变量的值" />
+        <Button
+            android:id="@+id/btn_sharedpreference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取sharedpreference" />
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示第二个app的图片" />
+    </LinearLayout>
+</RelativeLayout>
